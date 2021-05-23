@@ -6,10 +6,10 @@
    
 2. Would you use a unit test to test the “message” feature of a messaging application? Why or why not? For this question, assume the “message” feature allows a user to write and send a message to another user.
     - No, because unit testing is for testing individual units, not features. A unit test would individually test the text input, sending, and receiving of messages that the "message" feature entails separately.
-    - 
+  
 3. Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters
     - Yes, because this is an individual component of a program (as opposed to "message", which is a feature made up of a bunch of components bundled together).
-    - 
+  
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
     - I would expect there to be no browser popping up and showing you the actions, instead the specified actions will occur in the background with no UI and you would get feedback about what is happening in the console.
 
