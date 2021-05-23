@@ -18,6 +18,7 @@
     ```await Promise.all([
     page.waitForNavigation(),
     page.click('#some-link')
-    ]);```
+    ]);
+
     which would wait until you navigate to #settings manually. (source: https://stackoverflow.com/questions/53937210/puppeteer-go-to-a-different-page)
 
