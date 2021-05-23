@@ -15,10 +15,10 @@
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
     - You could use the code 
-    ```await Promise.all([
+    ``` await Promise.all([
     page.waitForNavigation(),
     page.click('#some-link')
-    ]);
+    ]); ```
 
     which would wait until you navigate to #settings manually. (source: https://stackoverflow.com/questions/53937210/puppeteer-go-to-a-different-page)
 
