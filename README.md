@@ -11,6 +11,13 @@
     - Yes, because this is an individual component of a program (as opposed to "message", which is a feature made up of a bunch of components bundled together).
     - 
 4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
+    - I would expect there to be no browser popping up and showing you the actions, instead the specified actions will occur in the background with no UI and you would get feedback about what is happening in the console.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
+    - You could use the code 
+    `await Promise.all([
+    page.waitForNavigation(),
+    page.click('#some-link')
+    ]);`
+    which would wait until you navigate to #settings manually. (source: https://stackoverflow.com/questions/53937210/puppeteer-go-to-a-different-page)
 
