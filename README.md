@@ -18,7 +18,7 @@
     ``` 
     await Promise.all([
         page.waitForNavigation(),
-        page.click('#some-link')
+        page.click('#settings')
     ]); 
     ```
 
